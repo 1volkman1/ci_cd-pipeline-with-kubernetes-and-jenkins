@@ -11,4 +11,4 @@
       state: present
       validate_certs: no
       namespace: default
-      definition: "{{ lookup('file', 'deployment.yml') }}"
+      definition: "{{ lookup('template', 'deployment.yml') }}"
